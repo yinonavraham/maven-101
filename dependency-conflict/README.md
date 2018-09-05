@@ -5,7 +5,7 @@
 | Project | GAV | Dependencies |
 | ------- | --- | ------------ |
 | Project 1 | `com.acme.dep-conf:dep-conf-proj1:1.0` | `commons-cli:commons-cli:1.3` |
-| Project 2 | `com.acme.dep-conf:dep-conf-proj2:1.0` | `commons-cli:commons-cli:1.3` |
+| Project 2 | `com.acme.dep-conf:dep-conf-proj2:1.0` | `commons-cli:commons-cli:1.4` |
 | Main Project | `com.acme.dep-conf:dep-conf-proj:1.0` | `com.acme.dep-conf:dep-conf-proj1:1.0` <br> `com.acme.dep-conf:dep-conf-proj2:1.0` |
 
 (the pom in the root directory is an aggregation of the 3 projects above for simplicity)
