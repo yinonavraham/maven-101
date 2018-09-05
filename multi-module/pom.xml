@@ -14,12 +14,12 @@
 
   <dependencyManagement>
     <dependencies>
-  	  <dependency>
+      <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>multi-module-api</artifactId>
         <version>${project.version}</version>
       </dependency>
-  	  <dependency>
+      <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>multi-module-core</artifactId>
         <version>${project.version}</version>
