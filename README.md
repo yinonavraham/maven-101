@@ -6,6 +6,7 @@ Maven examples, created as part of a Maven 101 session given at eBay.
 
 * [Help Plugin](#help-plugin)
 * [Dependency Plugin](#dependency-plugin)
+* [Versions Plugin](#versions-plugin)
 
 ### Help Plugin
 
@@ -60,4 +61,18 @@ For example, the following command prints a verbose dependency tree to a file na
 
 ```
 mvn dependency:tree -Dverbose -DoutputFile=dependencies.txt
+```
+
+### Versions Plugin
+
+The [Versions Maven Plugin](https://www.mojohaus.org/versions-maven-plugin/) 
+is used when you want to manage the versions of artifacts in a project's POM.
+It is very useful for automating several parts of the version management. 
+It is mostly useful in multi-module projects.
+
+For example, a common use case is to set the version for all modules in a multi-module project. 
+To set the project's new version to `1.2.0-SNAPSHOT`, use:
+
+```
+mvn version:set -DnewVersion=1.2.0-SNAPSHOT
 ```
