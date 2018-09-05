@@ -1,0 +1,15 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.acme.dep-conf</groupId>
+  <artifactId>dep-conf-proj-aggr</artifactId>
+  <version>1.0</version>
+  <packaging>pom</packaging>
+
+  <modules>
+  	<module>dep-conf-proj1</module>
+  	<module>dep-conf-proj2</module>
+  	<module>dep-conf-proj</module>
+  </modules>
+
+</project> 

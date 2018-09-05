@@ -1,0 +1,24 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.acme.dep-conf</groupId>
+  <artifactId>dep-conf-proj</artifactId>
+  <version>1.0</version>
+
+  <dependencies>
+  	
+  	<dependency>
+  	  <groupId>com.acme.dep-conf</groupId>
+  	  <artifactId>dep-conf-proj1</artifactId>
+  	  <version>1.0</version>
+  	</dependency>
+
+  	<dependency>
+  	  <groupId>com.acme.dep-conf</groupId>
+  	  <artifactId>dep-conf-proj2</artifactId>
+  	  <version>1.0</version>
+  	</dependency>
+  	
+  </dependencies>
+
+</project> 
