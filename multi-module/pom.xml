@@ -1,0 +1,31 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.acme.multi-module</groupId>
+  <artifactId>multi-module-parent</artifactId>
+  <version>1.0</version>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>api</module>    
+    <module>core</module>
+    <module>app</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+  	  <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>multi-module-api</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+  	  <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>multi-module-core</artifactId>
+        <version>${project.version}</version>
+        <scope>runtime</scope>
+      </dependency>
+  	</dependencies>
+  </dependencyManagement>
+
+</project> 
