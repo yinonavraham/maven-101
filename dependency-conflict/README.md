@@ -13,7 +13,7 @@
 ## Running the Example
 
 Check the dependencies, run:
-```
+<pre>
 $ mvn dependency:tree
 
 ...
@@ -41,14 +41,14 @@ $ mvn dependency:tree
 [INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ dep-conf-proj ---
 [INFO] com.acme.dep-conf:dep-conf-proj:jar:1.0
 [INFO] +- com.acme.dep-conf:dep-conf-proj2:jar:1.0:compile
-[INFO] |  \- commons-cli:commons-cli:jar:1.3:compile
+[INFO] |  <b>\- commons-cli:commons-cli:jar:1.3:compile</b>
 [INFO] \- com.acme.dep-conf:dep-conf-proj1:jar:1.0:compile
 
 ...
-```
+</pre>
 We can see above that maven resolved version `1.3` of `common-cli` for the main project.  
 To see more information, run with verbose output:
-```
+<pre>
 $ mvn dependency:tree -Dverbose
 
 ...
@@ -58,10 +58,10 @@ $ mvn dependency:tree -Dverbose
 [INFO] +- com.acme.dep-conf:dep-conf-proj1:jar:1.0:compile
 [INFO] |  \- commons-cli:commons-cli:jar:1.3:compile
 [INFO] \- com.acme.dep-conf:dep-conf-proj2:jar:1.0:compile
-[INFO]    \- (commons-cli:commons-cli:jar:1.4:compile - omitted for conflict with 1.3)
+[INFO]    <b>\- (commons-cli:commons-cli:jar:1.4:compile - omitted for conflict with 1.3)</b>
 
 ...
-```
+</pre>
 ### Note 
 As can be seen above, `common-cli:1.4` is ommited because of the conflict with version `1.3` comming from `dep-conf-proj1`.
 In this case, version `1.3` is selected because the dependency on project 1 is declared in the main project's pom before project 2.
