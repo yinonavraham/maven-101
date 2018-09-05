@@ -1,6 +1,6 @@
-# maven-101
+# Maven 101
 
-Maven examples, created as part of a Maven 101 session given at eBay
+Maven examples, created as part of a Maven 101 session given at eBay.
 
 ## Useful `mvn` Commands
 
