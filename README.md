@@ -24,3 +24,20 @@ For example, to see detailed help information on the `help:describe` goal itself
 ```bash
 mvn help:describe -Dplugin=help -Dgoal=describe -Ddetail
 ```
+
+Another example - to see which plugin corresponds to the `compile` build lifecycle phase, use:
+
+```
+$ mvn help:describe -Dcmd=compile
+...
+[INFO] --- maven-help-plugin:3.1.0:describe (default-cli) @ my-minimal-project ---
+[INFO] 'compile' is a phase corresponding to this plugin:
+org.apache.maven.plugins:maven-compiler-plugin:3.1:compile
+
+It is a part of the lifecycle for the POM packaging 'jar'. This lifecycle includes the following phases:
+* validate: Not defined
+* initialize: Not defined
+...
+```
+
+It also prints the other build lifecycle phases and their corresponding plugins (if any).
