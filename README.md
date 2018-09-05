@@ -1,12 +1,13 @@
 # Maven 101
 
-Maven examples, created as part of a Maven 101 session given at eBay.
+[Maven](https://maven.apache.org/) examples, created as part of a Maven 101 session given at eBay.
 
-## Useful `mvn` Commands
+## Useful `mvn` Plugins and Commands
 
 * [Help Plugin](#help-plugin)
 * [Dependency Plugin](#dependency-plugin)
 * [Versions Plugin](#versions-plugin)
+* [Build Helper Plugin](#build-helper-plugin)
 
 ### Help Plugin
 
@@ -76,3 +77,15 @@ To set the project's new version to `1.2.0-SNAPSHOT`, use:
 ```
 mvn version:set -DnewVersion=1.2.0-SNAPSHOT
 ```
+
+### Build Helper Plugin
+
+The [Maven Build Helper Plugin](https://www.mojohaus.org/build-helper-maven-plugin/) 
+contains various small independent goals to assist with the Maven build lifecycle.
+
+Some very usefule tasks are:
+
+* Adding source folders
+* Adding resource folders
+* Adding test source folders
+* and more...
