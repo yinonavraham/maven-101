@@ -2,12 +2,30 @@
 
 [Maven](https://maven.apache.org/) examples, created as part of a Maven 101 session given at eBay.
 
-## Useful `mvn` Plugins and Commands
+## Useful Command Line Options
+
+* `-h, --help`  
+  Show the usage help page of the `mvn` command line tool
+* `-U, --update-snapshots`  
+  Force updating snapshots (overrides the once-a-day strategy)
+* `-D, --define <arg>`    (e.g. `-DskipTests`)  
+  Define a system property, usually used for setting properties of plugins
+* `-fae, --fail-at-end`  
+  Fail only at the end of the run (instead of right after the first error)
+* `-fn, --fail-never`  
+  Do not fail the build
+* `-pl, --projects <module>[,<module>]*`  
+  Run a command only for specific projects (modules)
+* `-P, --activate-profiles <profile>[,<profile>]*`  
+  Activate a maven profile (which is defined in the pom or in the settings)
+
+## Useful Plugins
 
 * [Help Plugin](#help-plugin)
 * [Dependency Plugin](#dependency-plugin)
 * [Versions Plugin](#versions-plugin)
 * [Build Helper Plugin](#build-helper-plugin)
+* Surefire & Failsafe
 
 ### Help Plugin
 
