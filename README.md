@@ -2,6 +2,12 @@
 
 [Maven](https://maven.apache.org/) examples, created as part of a Maven 101 session given at eBay.
 
+## Examples
+
+* [Minimal Maven Project](minimal)
+* [Multi Module Project](multi-module)
+* [Dependency Conflict Debugging](dependency-conflict)
+
 ## Useful Command Line Options
 
 * `-h, --help`  
