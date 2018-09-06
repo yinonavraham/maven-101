@@ -10,6 +10,7 @@
   <artifactId>multi-module-app</artifactId>
 
   <dependencies>
+    
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>multi-module-api</artifactId>
@@ -18,6 +19,12 @@
       <groupId>${project.groupId}</groupId>
       <artifactId>multi-module-core</artifactId>
     </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+    </dependency>
+
   </dependencies>
 
 </project> 

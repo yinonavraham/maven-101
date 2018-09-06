@@ -14,10 +14,13 @@
 
   <properties>
     <dist.repo.baseurl>file:${user.home}/.m2/distribution</dist.repo.baseurl>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <dependencyManagement>
     <dependencies>
+
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>multi-module-api</artifactId>
@@ -29,6 +32,15 @@
         <version>${project.version}</version>
         <scope>runtime</scope>
       </dependency>
+
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-framework-bom</artifactId>
+        <version>5.0.8.RELEASE</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
     </dependencies>
   </dependencyManagement>
 
