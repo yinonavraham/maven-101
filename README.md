@@ -1,6 +1,7 @@
 # Maven 101
 
-[Maven](https://maven.apache.org/) examples, created as part of a Maven 101 session given at eBay.
+[Maven](https://maven.apache.org/) examples, created as part of a Maven 101 session given at eBay.  
+See: [The session's slide deck](Apache-Maven-101.pptx)
 
 ## Examples
 
