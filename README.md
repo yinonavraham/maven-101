@@ -18,9 +18,10 @@
 * `-D, --define <arg>`    (e.g. `-DskipTests`)  
   Define a system property, usually used for setting properties of plugins
 * `-fae, --fail-at-end`  
-  Fail only at the end of the run (instead of right after the first error)
+  In multi module projects - fail only at the end of the run, after building all modules
+  (instead of right after the first module with error)
 * `-fn, --fail-never`  
-  Do not fail the build
+  Do not fail the build at all
 * `-pl, --projects <module>[,<module>]*`  
   Run a command only for specific projects (modules)
 * `-P, --activate-profiles <profile>[,<profile>]*`  
