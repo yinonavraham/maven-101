@@ -12,6 +12,10 @@
     <module>app</module>
   </modules>
 
+  <properties>
+    <dist.repo.baseurl>file:${user.home}/.m2/distribution</dist.repo.baseurl>
+  </properties>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -27,5 +31,16 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+  <distributionManagement>
+    <repository>
+      <id>releases</id>
+      <url>${dist.repo.baseurl}/releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <url>${dist.repo.baseurl}/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
 
 </project> 
