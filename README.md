@@ -5,7 +5,8 @@
 ## Examples
 
 * [Minimal Maven Project](minimal)
-* [Multi Module Project](multi-module)
+* [Multi Module Project](multi-module)  
+  Also demonstrates: dependency scopes, dependency management, distribution management
 * [Dependency Conflict Debugging](dependency-conflict)
 
 ## Useful Command Line Options
